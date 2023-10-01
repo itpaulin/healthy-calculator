@@ -62,10 +62,10 @@ export const IMC = () => {
             <div className='flex justify-center'>
                 <Button gradientDuoTone="cyanToBlue" onClick={(e) => handle(e, weight || NaN, height || NaN)}> CALCULAR </Button>
             </div>
-            {!Number.isNaN(resultIMC) && <div className='mt-5'>
-                <HealthyBar percentage={percentage}/>
-                {faixaIMC !== undefined && <h1 className='mt-5'>Seu IMC se encontra na faixa de <h1 className='font-semibold'>{faixaIMC}: {resultIMC?.toFixed(2)}</h1></h1>}
-            </div> }
+            {!Number.isNaN(resultIMC) && <div className='mt-5 flex flex-col items-center'>
+                    <HealthyBar percentage={percentage}/>
+                    {faixaIMC !== undefined && <h1 className='mt-5 text-center'>Seu IMC se encontra na faixa de <h1 className='font-semibold'>{faixaIMC}: {resultIMC?.toFixed(2)}</h1></h1>}
+                </div> }
             
         </form>
     )

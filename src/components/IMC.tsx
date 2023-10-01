@@ -8,10 +8,6 @@ export const IMC = () => {
     const [faixaIMC, setFaixaIMC] = useState<string>()
     const [resultIMC , setResultIMC] = useState<number>()
     const [percentage, setPercentage] = useState<number>()
-    const [age, setAge] = useState<number>()
-    const handleAgeChange = (newAge: number) => {
-        setAge(newAge)
-    }
     const [height, setHeight] = useState<number>()
     const handleHeightChange = (newHeight: number) => {
         setHeight(newHeight)
@@ -64,9 +60,9 @@ export const IMC = () => {
             />
             </div>
             <div className='flex justify-center'>
-                <Button gradientDuoTone="cyanToBlue" onClick={(e) => handle(e, weight || 0, height || 0)}> CALCULAR </Button>
+                <Button gradientDuoTone="cyanToBlue" onClick={(e) => handle(e, weight || NaN, height || NaN)}> CALCULAR </Button>
             </div>
-            {resultIMC && <div className='mt-5'>
+            {!Number.isNaN(resultIMC) && <div className='mt-5'>
                 <HealthyBar percentage={percentage}/>
                 {faixaIMC !== undefined && <h1 className='mt-5'>Seu IMC se encontra na faixa de <h1 className='font-semibold'>{faixaIMC}: {resultIMC?.toFixed(2)}</h1></h1>}
             </div> }

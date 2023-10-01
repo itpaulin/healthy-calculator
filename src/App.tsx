@@ -25,13 +25,13 @@ function App() {
                 active
                 icon={FaBalanceScaleRight}
                 title="IMC"
-              ><p className='font-semibold text-center'> Calcule seu Índice de Massa Corporal e encontre sua faixa de peso ideal.</p>
+              ><p className='font-semibold text-center'> Calcule seu Índice de Massa Corporal e encontre sua faixa de peso ideal</p>
                 <IMC />
                </Tabs.Item>
               <Tabs.Item
                 icon={GiWeightLiftingUp}
                 title="Macros"
-              ><p className='font-RobotoRegular text-center'>Aqui é possível calcular seu gasto calórico basal, e a partir do resultado alinhar sua dieta de acordo com seu objetivo.</p></Tabs.Item>
+              ><p className='font-semibold text-center'>Calcule seu gasto calórico e defina uma dieta alimentar de acordo com seu objetivo</p></Tabs.Item>
             </Tabs.Group>
           </div>
         </div>

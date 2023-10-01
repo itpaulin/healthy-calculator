@@ -27,7 +27,7 @@ const CustomInput: React.FC<CustomInputProps> = ({ label, value, onChange, id, s
               value={value}
               onChange={handleChange}
               placeholder={placeholder}
-              required
+              required={true}
             />
           </div>
        )

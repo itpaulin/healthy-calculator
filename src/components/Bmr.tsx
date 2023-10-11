@@ -1,23 +1,18 @@
 import { useState } from 'react'
-import Brm from '../models/inteface-tdee'
+import FormBrm from '../models/inteface-tdee'
 import CustomInput from './elements-imc/CustomInput'
-import { Gender } from './elements-imc/Gender'
+import { GenderInput } from './elements-imc/Gender'
 
 export const Brm = () => {
-    const [form, setForm] = useState<Brm>()
-    const [height, setHeight] = useState<number>()
-    const handleHeightChange = (newHeight: number) => {
-        setHeight(newHeight)
+    const [formData, setFormData] = useState<FormBrm>({})
+    
+    const handleGender = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setFormData({...formData, gender: e.target.value})
     }
-    const [weight, setWeight] = useState<number>()
-    const handleWeightChange = (newWeight: number) => {
-        setWeight(newWeight)
-    }
-    const handleForm = () => {
-    }
+
     return (
         <>
-            <Gender />
+            <GenderInput />
             <CustomInput 
                 id="height"
                 sizing="sm"

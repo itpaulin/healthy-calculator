@@ -3,6 +3,7 @@ import {FaBalanceScaleRight} from 'react-icons/fa'
 import {GiWeightLiftingUp} from 'react-icons/gi'
 import FitnessSvg from './assets/undraw_fitness_stats_sht6';
 import { IMC } from './components/IMC'
+import { Brm } from './components/Bmr';
 function App() {
 
   return (
@@ -31,7 +32,9 @@ function App() {
               <Tabs.Item
                 icon={GiWeightLiftingUp}
                 title="Macros"
-              ><p className='font-semibold text-center'>Calcule seu gasto calórico e defina uma dieta alimentar de acordo com seu objetivo</p></Tabs.Item>
+              ><p className='font-semibold text-center'>Calcule seu gasto calórico e defina uma dieta alimentar de acordo com seu objetivo</p>
+                <Brm />
+              </Tabs.Item>
             </Tabs.Group>
           </div>
         </div>

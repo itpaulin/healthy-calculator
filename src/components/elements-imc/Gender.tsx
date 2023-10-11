@@ -1,5 +1,5 @@
 import { Label, TextInput, Radio } from 'flowbite-react'
-export function Gender() {
+export function GenderInput() {
     return (
         <>
            <Label className=" mb-1">

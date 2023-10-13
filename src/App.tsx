@@ -3,7 +3,9 @@ import {FaBalanceScaleRight} from 'react-icons/fa'
 import {GiWeightLiftingUp} from 'react-icons/gi'
 import FitnessSvg from './assets/undraw_fitness_stats_sht6';
 import { IMC } from './components/IMC'
-import { Brm } from './components/Bmr';
+import { TMB } from './components/Bmr';
+import { SetStateAction } from 'react';
+import FormBrm from './models/inteface-tdee';
 function App() {
 
   return (
@@ -23,7 +25,6 @@ function App() {
               style="underline">
               <Tabs.Item
                 className=''
-                active
                 icon={FaBalanceScaleRight}
                 title="IMC"
               ><p className='font-semibold text-center'> Calcule seu Índice de Massa Corporal e encontre sua faixa de peso ideal</p>
@@ -31,9 +32,10 @@ function App() {
                </Tabs.Item>
               <Tabs.Item
                 icon={GiWeightLiftingUp}
+                active
                 title="Macros"
               ><p className='font-semibold text-center'>Calcule seu gasto calórico e defina uma dieta alimentar de acordo com seu objetivo</p>
-                <Brm />
+                 <TMB />
               </Tabs.Item>
             </Tabs.Group>
           </div>

@@ -4,7 +4,7 @@ import React, { InputHTMLAttributes } from 'react'
 interface CustomInputProps {
     label: string;
     value?: number;
-    onChange: (value: number) => void;
+    onChange: (value: any) => void;
     id: string;
     sizing: string;
     type: string;

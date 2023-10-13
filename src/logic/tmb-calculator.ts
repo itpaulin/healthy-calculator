@@ -1,6 +1,6 @@
 import FormBrm, {ActivityLevel} from "../models/inteface-tdee";
 
-export function MifflinStJeor(form: FormBrm) {
+export function MifflinStJeor(form: FormBrm): number {
 
     const ActivityLevelFactors: Record<ActivityLevel, number> = {
         [ActivityLevel.Sedentary]: 1.2,
@@ -24,6 +24,11 @@ export function MifflinStJeor(form: FormBrm) {
     return finalResult
 }
 
-export function KatchMcArdle(form: FormBrm) {
+export function KatchMcArdle(form: FormBrm): number {
     const LBMCalc = form.weight * (100 - form.fatPercent) / 100
+
+    const result = 370 + (21.6 * LBMCalc);
+
+    return result
+
 }

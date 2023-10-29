@@ -1,27 +1,20 @@
-# React + TypeScript + Vite
+# Calculadora de IMC em React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma calculadora de Índice de Massa Corporal (IMC) desenvolvida com React, Tailwind CSS, FlowBit/UI e TypeScript. Esta aplicação permite aos usuários calcular o seu IMC com base no seu peso e altura e obter uma avaliação de saúde simples.
 
-Currently, two official plugins are available:
+![Screenshot da aplicação](./src/assets/preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+- React: Uma biblioteca JavaScript popular para a construção de interfaces de usuário.
+- Tailwind CSS: Um framework de CSS utilitário que torna a estilização mais rápida e simples.
+- FlowBit/UI: Uma biblioteca de componentes de IU reutilizáveis para acelerar o desenvolvimento.
+- TypeScript: Uma linguagem de programação que adiciona tipos estáticos ao JavaScript, tornando-o mais seguro e legível.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Como Usar
+1. Na página inicial, insira o seu peso (em quilogramas) e a sua altura (em centimetros).
+2. Clique no botão "Calcular IMC".
+3. O resultado do cálculo será exibido na tela, juntamente com uma avaliação de saúde com base no IMC calculado.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Como Executar o Projeto
+Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em seu sistema. Além disso, você deve ter o PNPM instalado.

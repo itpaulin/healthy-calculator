@@ -1,5 +1,4 @@
 import { Label, TextInput } from 'flowbite-react'
-import React, { InputHTMLAttributes } from 'react'
 
 interface CustomInputProps {
     label: string;

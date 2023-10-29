@@ -53,7 +53,7 @@ export const IMC = () => {
                 id="weight"
                 sizing="sm"
                 type="number"
-                placeholder='75.2 kg'
+                placeholder='75,2 kg'
                 label="Peso (kg)"
                 value={weight}
                 onChange={handleWeightChange}  

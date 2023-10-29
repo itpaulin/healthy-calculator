@@ -1,11 +1,7 @@
 import { Tabs } from 'flowbite-react'
 import {FaBalanceScaleRight} from 'react-icons/fa'
-import {GiWeightLiftingUp} from 'react-icons/gi'
 import FitnessSvg from './assets/undraw_fitness_stats_sht6';
 import { IMC } from './components/IMC'
-import { TMB } from './components/Bmr';
-import { SetStateAction } from 'react';
-import FormBrm from './models/inteface-tdee';
 function App() {
 
   return (

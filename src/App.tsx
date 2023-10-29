@@ -30,13 +30,13 @@ function App() {
               ><p className='font-semibold text-center'> Calcule seu Índice de Massa Corporal e encontre sua faixa de peso ideal</p>
                 <IMC />
                </Tabs.Item>
-              <Tabs.Item
+              {/* <Tabs.Item
                 icon={GiWeightLiftingUp}
                 active
                 title="Macros"
               ><p className='font-semibold text-center'>Calcule seu gasto calórico e defina uma dieta alimentar de acordo com seu objetivo</p>
                  <TMB />
-              </Tabs.Item>
+              </Tabs.Item> */}
             </Tabs.Group>
           </div>
         </div>
